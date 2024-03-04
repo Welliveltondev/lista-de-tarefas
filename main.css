@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #ffffcc;
+    padding: 32px;
+    align-items: center;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 32px;
+}
+
+input, button {
+    padding: 6px;
+    background-color: #e2e2d8;
+    font-size: 16px;
+
+}
+
+form {
+    text-align: center;
+    margin-top: 100px;
+}
+
+body {
+    background-color: #f8f8b2e7;
+}
+
+button {
+    cursor: pointer;
+}
+
+ul {
+    text-align: center;
+    margin-top: 8px;
+    font-size: 18px;
+}
+
+
+ul li {
+    display: none;
+}
