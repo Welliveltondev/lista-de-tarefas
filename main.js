@@ -1,14 +1,15 @@
-$(document).ready(function() {
-    $('btn-insert').click(function() {
-        
+$(document).ready(function(){
+    $('form').on('submit', function(e){
+        e.preventDefault();
+        const nomedaTarefa = $('input').val();
+        const novaTarefa = $(`<li>${nomedaTarefa}</li>`)
+
+        $(novaTarefa).appendTo('ul')
+        $('input').val('')
     })
 
-    $('form').on('submit', function(e) {
-        e.preventtDefault();
-        const endereçoNovaTarefa = $('#insert-tarefa').val();
-        const novoItem = $('<li></li>');
-        $(`endereçoNovaTarefa` ).appendTo(novoItem);
-        $(novoItem).appendTo('ul');
+    $('ul').on('click', 'li', function(e){
+        e.preventDefault();
+        $(this).toggClass('riscarTarefa')
     })
-
 })

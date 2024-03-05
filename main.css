@@ -43,5 +43,11 @@ ul {
 
 
 ul li {
-    display: none;
+    cursor: pointer;
+}
+
+
+
+.riscarTarefa {
+    text-decoration: line-through;
 }
